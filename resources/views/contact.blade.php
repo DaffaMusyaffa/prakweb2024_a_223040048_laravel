@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halaman About</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Halaman Contact</title>
 </head>
 
 <body>
@@ -14,9 +13,15 @@
   <a href="/about">About</a>
   <a href="/contact">Contact</a>
   <h1>Halaman Home</h1>
-  <h1>Halaman About</h1>
-  <h3>Owner: {{ $nama }} </h3>
-  <img src="img/profile.jpeg" alt="Daffa" width="200">
+  <h1>Halaman Contact</h1>
+  <ul>
+    <li>
+      <a href="https://instagram.com/daffamsyff_">Instagram</a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/muhammaddaffamusyaffa/">Linkedin</a>
+    </li>
+  </ul>
 </body>
 
 </html>

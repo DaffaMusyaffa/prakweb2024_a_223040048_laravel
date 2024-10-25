@@ -10,6 +10,14 @@ Route::get('/about', function () {
     return view('about', ['nama' => 'Muhammad Daffa Musyaffa']);
 });
 
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 // Buat 2 rute baru
 // 1. /blog
 // 2 buah artikel, judul dan isi
