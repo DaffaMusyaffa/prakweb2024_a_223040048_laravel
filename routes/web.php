@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 
 
@@ -36,6 +38,10 @@ Route::get('/categories/{category:slug}', function (Category $category) {
 
     return view('posts', ['title' => 'Articles in:' . $category->name, 'posts' => $category->posts]);
 });
+
+Route::get('/login', [LoginController::class, 'index']);
+
+Route::get('/register', [RegisterController::class, 'index']);
 
 Route::get('/contact', function () {
     return view('contact', ['title' => 'Contact']);
